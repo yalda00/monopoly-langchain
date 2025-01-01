@@ -10,7 +10,7 @@ import random
 #  to the same value
 #  TODO check if a road is mortgaged in the function choose_house_hotel_to_buy. If the road is mortgaged is probably
 #   not possible to buy a house (check the rules)
-#  TODO Implement cards functionality (opportunity, etc.)
+#  TODO Implement cards functionadict_propertieslity (opportunity, etc.)
 
 
 class Player:
