@@ -827,7 +827,7 @@ class Player:
 
         tuple_dices = self.roll_dice()
         self._dice_value = tuple_dices[0] + tuple_dices[1]
-        if self._position is not 10 or (self._position == 10 and self._free_visit):  # if player is not in jail
+        if self._position != 10 or (self._position == 10 and self._free_visit):  # if player is not in jail
             self._position = (self._position + self._dice_value) % len(self._list_board)
             self._free_visit = True if self._position == 10 else False
 
