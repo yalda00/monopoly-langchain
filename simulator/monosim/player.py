@@ -10,7 +10,7 @@ import random
 #  to the same value
 #  TODO check if a road is mortgaged in the function choose_house_hotel_to_buy. If the road is mortgaged is probably
 #   not possible to buy a house (check the rules)
-#  TODO Implement cards functionality (opportunity, etc.)
+#  TODO Implement cards functionadict_propertieslity (opportunity, etc.)
 
 
 class Player:
@@ -827,7 +827,7 @@ class Player:
 
         tuple_dices = self.roll_dice()
         self._dice_value = tuple_dices[0] + tuple_dices[1]
-        if self._position is not 10 or (self._position == 10 and self._free_visit):  # if player is not in jail
+        if self._position != 10 or (self._position == 10 and self._free_visit):  # if player is not in jail
             self._position = (self._position + self._dice_value) % len(self._list_board)
             self._free_visit = True if self._position == 10 else False
 
